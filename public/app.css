@@ -1,0 +1,39 @@
+body{
+    background-color: #90e0ef;
+}
+
+h1{
+    text-align: center;
+}
+
+ul{
+    list-style: none;
+    font-size: 1.5rem;
+   
+}
+
+li{
+    border: 3px solid aqua;
+    padding: 16px;
+    margin: 10px auto;
+    box-shadow: 0px 0px 2px rgb(226, 217, 217);
+    border-radius: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #9bf6ff;
+    width: 400px;
+    
+}
+
+section{
+    width: 500px;
+    margin: 30px auto;
+    padding: 16px;
+    border: 1px solid #ccc;
+    background-color: white;
+    font-size: larger;
+   
+}
+
+strong{
+    color: #480ca8;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/app.css">
+</head>
+<body>
+
+    <h1>All Blogs</h1>
+    
+    <ul>
+        <%for(let item of blogs){%>
+            <li>
+                <strong><%=item.name%></strong>:
+                <%=item.desc%>
+                <br>
+              
+                <form action="/blogs/<%=item._id%>" method="get">
+                    <button type="submit">Show</button>
+                </form>
+
+                <form action="/blogs/<%=item._id%>/edit" method="get">
+                    <button type="submit">Edit</button>
+                </form>
+
+
+
+
+                <form action="/blogs/<%=item._id%>?_method=DELETE" method="POST">
+                    <button type="submit">Delete</button>
+                </form>
+            </li>
+        <%}%>
+    </ul>
+    <a href="/blogs/new"  style="margin-left:48%; font-size: larger;font-weight: 700;">New Blog</a>
+    
+</body>
+</html>

@@ -1,0 +1,9 @@
+h1{
+    text-align: center;
+    text-shadow: 1.5px 1px 1px rgb(63, 22, 22);
+}
+
+button{
+    margin: 20px auto;
+    cursor: pointer;
+}
